@@ -64,8 +64,24 @@
 
 :root {
     --lmds-primary-color: #319ace;
-    --lmds-primary-font: "Roboto Condensed";
-    --lmds-secondary-font: "Roboto";
+    --lmds-font-condensed: "Roboto Condensed", sans-serif;
+    --lmds-font-regular: "Roboto", sans-serif;
+}
+
+/* Classes */
+
+.bg-lmds {
+  background-color: var(--lmds-primary-color);
+}
+
+.color-lmds {
+  color: var(--lmds-primary-color);
+}
+
+/* BODY */
+
+body {
+  font-family: var(--lmds-font-regular)
 }
 
 /* Globals */
@@ -88,7 +104,7 @@
 
 .top-bar {
     background-color: var(--lmds-primary-color);
-    font-family: var(--lmds-primary-font)
+    font-family: var(--lmds-font-condensed)
 }
 
 /* Nav Menu V1 */
@@ -96,7 +112,7 @@
 .nav-menu {
   background-color: white;
   align-items: center;
-  font-family: var(--lmds-primary-font);
+  font-family: var(--lmds-font-condensed);
 }
 
 .nav-link{
@@ -172,7 +188,7 @@
 
 .carousel-caption {
   bottom: 30%;
-  font-family: var(--lmds-secondary-font);
+  font-family: var(--lmds-font-regular);
 }
 
 .carousel-caption h2 {
