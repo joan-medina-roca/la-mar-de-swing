@@ -84,12 +84,36 @@
   opacity: .7;
 }
 
-/* Nav Menu and Top Bar */
+/* Top Bar */
 
 .top-bar {
     background-color: var(--lmds-primary-color);
     font-family: var(--lmds-primary-font)
 }
+
+/* Nav Menu con Drowpdowns */
+
+.dropdown-menu li {
+  position: relative;
+  }
+
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+  }
+
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+  }
+
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+  }
+
+/* Nav Menu V1 */
 
 .nav-menu {
   background-color: white;
@@ -99,24 +123,49 @@
 
 .nav-link{
   color: darkslategray;
-  transition: all .2s ease;
 }
 
 .nav-link:hover{
   color: black;
-  margin-top: -7px;
 }
 
-.nav-link:hover::after {
-  content: "";
-  display: flex;
-  border-bottom: 2px solid var(--lmds-primary-color)
+/* Navbar Responsive */
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 /* CARRUSEL */
 
 .carousel {
   background-color: black;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel img {
+  max-width: unset;
+}
+
+/* IMAGEN OBJECT FIT COVER - Para que quede centrada y maximo ancho */
+
+.img-cover {
+  object-fit: cover;
+  min-height: 100%;
+  width: auto;
+}
+
+.carousel-inner {
+  min-height: 500px;
 }
 
 .carousel-caption {
