@@ -107,7 +107,7 @@ body {
     font-family: var(--lmds-font-condensed)
 }
 
-/* Nav Menu V1 */
+/* Nav Menu */
 
 .nav-menu {
   background-color: white;
@@ -146,7 +146,7 @@ body {
   }
 }
 
-/* Navbar Responsive */
+/* Navbar Responsive Hamburger sin borde */
 
 .navbar-toggler {
   border: none;
@@ -171,13 +171,19 @@ body {
 }
 
 .carousel img {
-  max-width: unset;
+    object-fit: cover;
+    object-position: center;
+    height: 65vh;
+    max-height: 600px;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* IMAGEN OBJECT FIT COVER - Para que quede centrada y maximo ancho */
 
 .img-cover {
   object-fit: cover;
+  object-position: center;
   min-height: 100%;
   width: auto;
 }
@@ -187,8 +193,9 @@ body {
 }
 
 .carousel-caption {
-  bottom: 30%;
+  bottom: 35%;
   font-family: var(--lmds-font-regular);
+  text-shadow: -1px -1px 1px rgb(255 255 255 / 10%), 1px 1px 1px rgb(0 0 0 / 50%);
 }
 
 .carousel-caption h2 {
@@ -201,10 +208,4 @@ body {
 
 .carousel-caption button {
   font-weight: 800;
-}
-
-@media screen and (max-width:900px) {
-  .carousel-caption {
-    bottom: 20%;
-  }
 }
