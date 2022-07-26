@@ -14,6 +14,7 @@
     }
   ],
   "start_url": "https://la-mar-de-swing.netlify.app",
+  "scope": "https://la-mar-de-swing/",
   "background_color": "#319ace",
   "display": "standalone",
   "theme_color": "#319ace"
