@@ -75,6 +75,12 @@
   color: var(--lmds-primary-color);
 }
 
+.header-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--lmds-primary-color);
+  text-underline-offset: 2px;
+}
+
 /* BODY */
 
 body {
